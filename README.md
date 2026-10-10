@@ -1,29 +1,39 @@
 # HeapOfStudentsP1
 ## get a number of students from a csv file 
 '''
-Student(){
-    # string studentString;
-    # string firstName;
-    # string lastName;
-    # Date* dob;
-    # Date* expected graduation;
-    # Address* Address;
-    # int creditHours;
-    + Student();
-}
-Adress(){
-    # string street;
-    # string city;
-    # string state;
-    # string state;
-    + Address(){
-        
-    }
-    + void init(stree)
-}
-Date(){
+class Student(){
+    firstName: string
+    lastName: string
+    address: Address
+    birthDate: Date
+    gradDate: Date
+    creditHour: int
+    Student()
+    init(string studentString)
+    printStudent()
+    getLastFirst() string
 
+class Address{
+    street: string
+    city: string
+    state: string
+    zip: string
+    Address()
+    init(street, city, state, zip)
+    printAddress()
 }
+
+class Date{
+    month: int
+    day: int
+    year: int
+    Date()
+    init(dateString)
+    printDate()
+} 
+
+Student --> Address
+Student --> Date
 '''
 
 ## Objective
